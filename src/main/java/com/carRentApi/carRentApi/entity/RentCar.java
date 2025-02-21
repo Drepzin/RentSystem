@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.UUID;
 
 @Entity
-@Table(name = "cars")
+@Table(name = "rent_cars")
 public class RentCar {
 
     @Id
@@ -25,7 +25,7 @@ public class RentCar {
     @Column(nullable = false)
     private Short modelYear;
 
-    @Column(name = "maximum_speed", nullable = false)
+    @Column(name = "max_speed", nullable = false)
     private Short maxSpeed;
 
     @Column(name = "people_capacity", nullable = false)
