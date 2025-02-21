@@ -1,0 +1,11 @@
+CREATE TABLE rent_clients(id SERIAL PRIMARY KEY, first_name VARCHAR(25) NOT NULL, last_name VARCHAR(50),
+email VARCHAR(100) UNIQUE NOT NULL, phone_number VARCHAR(22) UNIQUE NOT NULL, country VARCHAR(20) NOT NULL,
+city VARCHAR(25) NOT NULL, birth_date DATE NOT NULL);
+
+CREATE TABLE rent_cars(id SERIAL PRIMARY KEY, car_model VARCHAR(30) NOT NULL, manufacturer VARCHAR(15) NOT NULL,
+color VARCHAR(20), model_year SMALLINT NOT NULL, max_speed SMALLINT NOT NULL, people_capacity SMALLINT NOT NULL,
+baggage_capacity DOUBLE PRECISION NOT NULL, price_per_day DOUBLE PRECISION NOT NULL, car_track_code VARCHAR(50) NOT NULL);
+
+CREATE TABLE rent_orders(id SERIAL PRIMARY KEY, client_id INTEGER NOT NULL, car_id INTEGER NOT NULL,
+rent_days SMALLINT NOT NULL, total_value DOUBLE PRECISION NOT NULL,
+FOREIGN KEY(client_id) REFERENCES rent_clients(id), FOREIGN KEY(car_id) REFERENCES rent_cars(id));

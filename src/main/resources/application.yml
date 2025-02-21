@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: carRentApi
+  datasource:
+    url: jdbc:postgresql://localhost:5432/rent_system
+    username: postgres
+    password: 12345678
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        ddl-auto: create-drop
+        format_sql: true
