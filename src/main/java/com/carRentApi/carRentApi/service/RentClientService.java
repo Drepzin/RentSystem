@@ -5,7 +5,11 @@ import com.carRentApi.carRentApi.entity.dto.ClientRequestDto;
 import com.carRentApi.carRentApi.entity.dto.ClientResponseDto;
 import com.carRentApi.carRentApi.mapper.ClientMapper;
 import com.carRentApi.carRentApi.repository.RentClientRepository;
+import com.carRentApi.carRentApi.utils.ClientUpdater;
 import com.carRentApi.carRentApi.utils.ClientValidator;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -30,13 +34,15 @@ public class RentClientService {
         return ClientMapper.CLIENT_MAPPER.entityToDto(rentClient);
     }
 
-    public List<ClientResponseDto> findAllClients(){
-        return rentClientRepository.findAll().stream().map(ClientMapper.CLIENT_MAPPER::entityToDto).toList();
+    public Page<ClientResponseDto> findAllClients(Integer page, Integer qnt){
+        Pageable pageable = PageRequest.of(page, qnt);
+        return rentClientRepository.findAll(pageable).map(ClientMapper.CLIENT_MAPPER::entityToDto);
     }
 
     public ClientResponseDto findClientById(Integer id){
-        return ClientMapper.CLIENT_MAPPER.entityToDto(rentClientRepository.
-                findById(id).orElseThrow(RuntimeException::new));
+        return ClientMapper.CLIENT_MAPPER
+                .entityToDto(rentClientRepository.findById(id)
+                        .orElseThrow(RuntimeException::new));
     }
 
     public void deleteByClient(Integer id){
@@ -44,6 +50,14 @@ public class RentClientService {
         if(rentClient.isEmpty()){
             throw new RuntimeException();
         }
-        rentClientRepository.delete(rentClient.get());
+        rentClientRepository.deleteById(id);
+    }
+
+    public void updateClientInfos(Integer id, ClientRequestDto clientRequestDto){
+        Optional<RentClient> rentClient = rentClientRepository.findById(id);
+        if(rentClient.isEmpty()){
+            throw new RuntimeException();
+        }
+        ClientUpdater.updateClient(rentClient.get(), clientRequestDto);
     }
 }
