@@ -3,7 +3,7 @@ package com.carRentApi.carRentApi.entity;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "rent_order")
+@Table(name = "rent_orders")
 public class RentOrder {
 
     @Id
@@ -31,6 +31,7 @@ public class RentOrder {
         this.rentClient = rentClient;
         this.rentCar = rentCar;
         this.rentDays = rentDays;
+        totalValue = rentCar.getPricePerDay() * rentDays;
     }
 
     public Integer getId() {

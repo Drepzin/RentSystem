@@ -9,8 +9,11 @@ import org.springframework.data.repository.query.Param;
 
 import java.util.Optional;
 
-public interface RentCarRepository extends PagingAndSortingRepository<RentCar, Integer> {
+public interface RentCarRepository extends JpaRepository<RentCar, Integer> {
 
     @Query("SELECT c FROM RentCar c WHERE c.carModel LIKE :name%")
     Optional<RentCar> findCarsByName(@Param("name") String carName);
+
+    @Query("SELECT c FROM RentCar c WHERE c.carModel = :model")
+    Optional<RentCar> findCarByModel(@Param("model") String model);
 }

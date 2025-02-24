@@ -1,4 +1,4 @@
 package com.carRentApi.carRentApi.entity.dto;
 
-public record OrderRequestDto(Integer clientId, Integer carId, Short rentDays, Double totalValue){
+public record OrderRequestDto(String phoneNumber, String carModel, Short rentDays){
 }

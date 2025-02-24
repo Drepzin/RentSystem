@@ -5,7 +5,7 @@ import com.carRentApi.carRentApi.entity.dto.ClientRequestDto;
 import com.carRentApi.carRentApi.entity.dto.ClientResponseDto;
 import com.carRentApi.carRentApi.mapper.ClientMapper;
 import com.carRentApi.carRentApi.repository.RentClientRepository;
-import com.carRentApi.carRentApi.utils.ClientUpdater;
+import com.carRentApi.carRentApi.utils.EntityUpdater;
 import com.carRentApi.carRentApi.utils.ClientValidator;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -39,6 +39,11 @@ public class RentClientService {
         return rentClientRepository.findAll(pageable).map(ClientMapper.CLIENT_MAPPER::entityToDto);
     }
 
+    public List<ClientResponseDto> findClientsByName(String name){
+        return rentClientRepository.findClientsByName(name)
+                .stream().map(ClientMapper.CLIENT_MAPPER::entityToDto).toList();
+    }
+
     public ClientResponseDto findClientById(Integer id){
         return ClientMapper.CLIENT_MAPPER
                 .entityToDto(rentClientRepository.findById(id)
@@ -58,6 +63,6 @@ public class RentClientService {
         if(rentClient.isEmpty()){
             throw new RuntimeException();
         }
-        ClientUpdater.updateClient(rentClient.get(), clientRequestDto);
+        EntityUpdater.updateClient(rentClient.get(), clientRequestDto);
     }
 }
