@@ -21,17 +21,22 @@ public class RentOrder {
     @Column(name = "rent_days", nullable = false)
     private Short rentDays;
 
+    @Column(name = "quantity", nullable = false)
+    private Integer quantity;
+
     @Column(name = "total_value", nullable = false)
     private Double totalValue;
 
     public RentOrder(){}
 
     public RentOrder(RentClient rentClient, RentCar rentCar,
-                     Short rentDays) {
+                     Short rentDays, Integer quantity) {
         this.rentClient = rentClient;
         this.rentCar = rentCar;
         this.rentDays = rentDays;
         totalValue = rentCar.getPricePerDay() * rentDays;
+        this.quantity = quantity;
+
     }
 
     public Integer getId() {
@@ -68,5 +73,13 @@ public class RentOrder {
 
     public Double getTotalValue() {
         return rentCar.getPricePerDay() * rentDays;
+    }
+
+    public Integer getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(Integer quantity) {
+        this.quantity = quantity;
     }
 }

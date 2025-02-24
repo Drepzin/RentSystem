@@ -5,6 +5,7 @@ import com.carRentApi.carRentApi.entity.RentClient;
 import com.carRentApi.carRentApi.entity.RentOrder;
 import com.carRentApi.carRentApi.entity.dto.OrderRequestDto;
 import com.carRentApi.carRentApi.entity.dto.OrderResponseDto;
+import com.carRentApi.carRentApi.entity.exception.AvailableQuantityException;
 import com.carRentApi.carRentApi.mapper.OrderMapper;
 import com.carRentApi.carRentApi.repository.RentCarRepository;
 import com.carRentApi.carRentApi.repository.RentClientRepository;
@@ -33,7 +34,11 @@ public class RentOrderService {
     public OrderResponseDto addClientOrder(OrderRequestDto orderRequestDto){
        var rentClient = rentClientRepository.findClientByPhoneNumber(orderRequestDto.phoneNumber()).orElseThrow(RuntimeException::new);
         var rentCar = rentCarRepository.findCarByModel(orderRequestDto.carModel()).orElseThrow(RuntimeException::new);
-        RentOrder rentOrder = new RentOrder(rentClient, rentCar, orderRequestDto.rentDays());
+        if(rentCar.getAvailableQuantity() < orderRequestDto.quantity() || rentCar.getAvailableQuantity() <= 0){
+            throw new AvailableQuantityException("The solicited quantity is out of stock");
+        }
+        rentCar.setAvailableQuantity(rentCar.getAvailableQuantity() - orderRequestDto.quantity());
+        RentOrder rentOrder = new RentOrder(rentClient, rentCar, orderRequestDto.rentDays(), orderRequestDto.quantity());
         rentOrderRepository.save(rentOrder);
         return OrderMapper.ORDER_MAPPER.entityToDto(rentOrder);
     }

@@ -40,13 +40,16 @@ public class RentCar {
     @Column(name = "car_track_code")
     private String carTrackCode;
 
+    @Column(name = "available_quantity", nullable = false)
+    private Integer availableQuantity;
+
     @OneToMany(mappedBy = "rentCar")
     private List<RentOrder> rentOrder;
 
     public RentCar(){}
 
     public RentCar(String carModel, String manufacturer, String color, Short modelYear, Short maxSpeed, Byte peopleCapacity,
-                   Double baggageCapacity, Double pricePerDay) {
+                   Double baggageCapacity, Double pricePerDay, Integer availableQuantity) {
         this.carModel = carModel;
         this.manufacturer = manufacturer;
         this.color = color;
@@ -56,6 +59,7 @@ public class RentCar {
         this.baggageCapacity = baggageCapacity;
         this.pricePerDay = pricePerDay;
         carTrackCode = UUID.randomUUID().toString();
+        this.availableQuantity = availableQuantity;
     }
 
     public Integer getId() {
@@ -136,5 +140,13 @@ public class RentCar {
 
     public void setCarTrackCode(String carTrackCode) {
         this.carTrackCode = carTrackCode;
+    }
+
+    public Integer getAvailableQuantity() {
+        return availableQuantity;
+    }
+
+    public void setAvailableQuantity(Integer availableQuantity) {
+        this.availableQuantity = availableQuantity;
     }
 }

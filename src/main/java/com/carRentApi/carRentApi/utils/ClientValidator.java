@@ -2,6 +2,7 @@ package com.carRentApi.carRentApi.utils;
 
 import com.carRentApi.carRentApi.entity.RentClient;
 import com.carRentApi.carRentApi.entity.dto.ClientRequestDto;
+import com.carRentApi.carRentApi.entity.exception.UniqueEntityFieldsException;
 import com.carRentApi.carRentApi.repository.RentClientRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -16,7 +17,7 @@ public class ClientValidator {
 
     public void verify(ClientRequestDto clientRequestDto){
         if(validatePhone(clientRequestDto) || validateEmail(clientRequestDto) || clientRequestDto == null){
-            throw new RuntimeException("error");
+            throw new UniqueEntityFieldsException("Phone and/or email already exist");
         }
     }
 
