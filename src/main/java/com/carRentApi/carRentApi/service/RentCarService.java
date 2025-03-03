@@ -20,6 +20,11 @@ public class RentCarService {
         this.rentCarRepository = rentCarRepository;
     }
 
+    public void saveCar(CarRequestDto carRequestDto){
+        RentCar rentCar = CarMapper.CAR_MAPPER.dtoToEntity(carRequestDto);
+        rentCarRepository.save(rentCar);
+    }
+
     public List<CarResponseDto> getAllCars(){
         return rentCarRepository.findAll().stream().
                 map(CarMapper.CAR_MAPPER::entityToDto).toList();

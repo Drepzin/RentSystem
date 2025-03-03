@@ -14,8 +14,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 
-@Controller
-@RequestMapping("Rent_client")
+@RestController
+@RequestMapping("/Rent_client")
 public class ClientController {
 
     @Autowired
@@ -26,7 +26,7 @@ public class ClientController {
         return new ResponseEntity<>(rentClientService.addClient(clientRequestDto), HttpStatus.CREATED);
     }
 
-    @GetMapping()
+    @GetMapping
     public ResponseEntity<Page<ClientResponseDto>> getAllClients(@RequestParam(value = "page", defaultValue = "0") Integer page,
              @RequestParam(value = "size", defaultValue = "1") Integer size){
         return new ResponseEntity<>(rentClientService.findAllClients(page, size), HttpStatus.FOUND);

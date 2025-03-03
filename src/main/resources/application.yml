@@ -2,12 +2,24 @@ spring:
   application:
     name: carRentApi
   datasource:
-    url: jdbc:postgresql://localhost:5432/rent_system
-    username: postgres
-    password: 12345678
+    url: ${DATA_SOURCE_URL}
+    username: ${DATA_SOURCE_USERNAME}
+    password: ${DATA_SOURCE_PASSWORD}
   jpa:
     show-sql: true
     properties:
       hibernate:
         ddl-auto: create
         format_sql: true
+
+logging:
+  file:
+    name: app.log
+
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: profile
