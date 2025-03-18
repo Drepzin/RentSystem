@@ -1,25 +1,30 @@
-2025-03-06T19:04:27.576-03:00  INFO 42329 --- [carRentApi] [main] c.c.carRentApi.CarRentApiApplication     : Starting CarRentApiApplication using Java 21.0.6 with PID 42329 (/home/drepz/Desktop/rentSystem/target/classes started by drepz in /home/drepz/Desktop/rentSystem)
-2025-03-06T19:04:27.580-03:00  INFO 42329 --- [carRentApi] [main] c.c.carRentApi.CarRentApiApplication     : No active profile set, falling back to 1 default profile: "default"
-2025-03-06T19:04:28.035-03:00  INFO 42329 --- [carRentApi] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-03-06T19:04:28.066-03:00  INFO 42329 --- [carRentApi] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 4 JPA repository interfaces.
-2025-03-06T19:04:28.336-03:00  INFO 42329 --- [carRentApi] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-03-06T19:04:28.343-03:00  INFO 42329 --- [carRentApi] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-03-06T19:04:28.343-03:00  INFO 42329 --- [carRentApi] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
-2025-03-06T19:04:28.369-03:00  INFO 42329 --- [carRentApi] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-03-06T19:04:28.369-03:00  INFO 42329 --- [carRentApi] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 758 ms
-2025-03-06T19:04:28.489-03:00  INFO 42329 --- [carRentApi] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-03-06T19:04:28.652-03:00  INFO 42329 --- [carRentApi] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@77ce88c4
-2025-03-06T19:04:28.653-03:00  INFO 42329 --- [carRentApi] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-03-06T19:04:28.669-03:00  INFO 42329 --- [carRentApi] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5432/rent_system (PostgreSQL 17.4)
-2025-03-06T19:04:28.699-03:00  INFO 42329 --- [carRentApi] [main] o.f.core.internal.command.DbValidate     : Successfully validated 4 migrations (execution time 00:00.014s)
-2025-03-06T19:04:28.730-03:00  INFO 42329 --- [carRentApi] [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 3
-2025-03-06T19:04:28.737-03:00  INFO 42329 --- [carRentApi] [main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "4 - CREATE OAUTH CLIENT JWT"
-2025-03-06T19:04:28.756-03:00  INFO 42329 --- [carRentApi] [main] o.f.core.internal.command.DbMigrate      : Successfully applied 1 migration to schema "public", now at version v4 (execution time 00:00.011s)
-2025-03-06T19:04:28.804-03:00  INFO 42329 --- [carRentApi] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-03-06T19:04:28.834-03:00  INFO 42329 --- [carRentApi] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
-2025-03-06T19:04:28.851-03:00  INFO 42329 --- [carRentApi] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-03-06T19:04:28.989-03:00  INFO 42329 --- [carRentApi] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-03-06T19:04:29.037-03:00  INFO 42329 --- [carRentApi] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-03-16T19:48:24.277-03:00  INFO 28858 --- [carRentApi] [main] c.c.carRentApi.CarRentApiApplication     : Starting CarRentApiApplication using Java 21.0.6 with PID 28858 (/home/drepz/Desktop/rentSystem/target/classes started by drepz in /home/drepz/Desktop/rentSystem)
+2025-03-16T19:48:24.280-03:00  INFO 28858 --- [carRentApi] [main] c.c.carRentApi.CarRentApiApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-03-16T19:48:24.721-03:00  INFO 28858 --- [carRentApi] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-16T19:48:24.754-03:00  INFO 28858 --- [carRentApi] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 5 JPA repository interfaces.
+2025-03-16T19:48:25.060-03:00  INFO 28858 --- [carRentApi] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-16T19:48:25.068-03:00  INFO 28858 --- [carRentApi] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-16T19:48:25.068-03:00  INFO 28858 --- [carRentApi] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-03-16T19:48:25.107-03:00  INFO 28858 --- [carRentApi] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-16T19:48:25.107-03:00  INFO 28858 --- [carRentApi] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 804 ms
+2025-03-16T19:48:25.246-03:00  INFO 28858 --- [carRentApi] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-16T19:48:25.459-03:00  INFO 28858 --- [carRentApi] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@37a67cf
+2025-03-16T19:48:25.460-03:00  INFO 28858 --- [carRentApi] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-16T19:48:25.477-03:00  INFO 28858 --- [carRentApi] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5432/rent_system (PostgreSQL 17.4)
+2025-03-16T19:48:25.504-03:00  INFO 28858 --- [carRentApi] [main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table "public"."flyway_schema_history" does not exist yet
+2025-03-16T19:48:25.507-03:00  INFO 28858 --- [carRentApi] [main] o.f.core.internal.command.DbValidate     : Successfully validated 4 migrations (execution time 00:00.011s)
+2025-03-16T19:48:25.518-03:00  INFO 28858 --- [carRentApi] [main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "public"."flyway_schema_history" ...
+2025-03-16T19:48:25.574-03:00  INFO 28858 --- [carRentApi] [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": << Empty Schema >>
+2025-03-16T19:48:25.582-03:00  INFO 28858 --- [carRentApi] [main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "1 - CREATE ENTITYS TABLES"
+2025-03-16T19:48:25.602-03:00  INFO 28858 --- [carRentApi] [main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "2 - POPULATE CAR TABLE"
+2025-03-16T19:48:25.610-03:00  INFO 28858 --- [carRentApi] [main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "3 - CREATE SECURITY ENTITY TABLE"
+2025-03-16T19:48:25.616-03:00  INFO 28858 --- [carRentApi] [main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "4 - CREATE OAUTH CLIENT JWT"
+2025-03-16T19:48:25.623-03:00  INFO 28858 --- [carRentApi] [main] o.f.core.internal.command.DbMigrate      : Successfully applied 4 migrations to schema "public", now at version v4 (execution time 00:00.013s)
+2025-03-16T19:48:25.678-03:00  INFO 28858 --- [carRentApi] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-16T19:48:25.712-03:00  INFO 28858 --- [carRentApi] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-03-16T19:48:25.729-03:00  INFO 28858 --- [carRentApi] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-16T19:48:25.859-03:00  INFO 28858 --- [carRentApi] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-16T19:48:25.901-03:00  INFO 28858 --- [carRentApi] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 17.4
@@ -27,97 +32,21 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-03-06T19:04:29.117-03:00 ERROR 42329 --- [carRentApi] [main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: Entity 'com.carRentApi.carRentApi.entity.exception.ClientOauth' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
-2025-03-06T19:04:29.117-03:00  WARN 42329 --- [carRentApi] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'com.carRentApi.carRentApi.entity.exception.ClientOauth' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
-2025-03-06T19:04:29.117-03:00  INFO 42329 --- [carRentApi] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-03-06T19:04:29.130-03:00  INFO 42329 --- [carRentApi] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-03-06T19:04:29.131-03:00  INFO 42329 --- [carRentApi] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2025-03-06T19:04:29.137-03:00  INFO 42329 --- [carRentApi] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2025-03-06T19:04:29.144-03:00 ERROR 42329 --- [carRentApi] [main] o.s.boot.SpringApplication               : Application run failed
-
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'com.carRentApi.carRentApi.entity.exception.ClientOauth' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1812) ~[spring-beans-6.2.2.jar:6.2.2]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-6.2.2.jar:6.2.2]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.2.jar:6.2.2]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.2.jar:6.2.2]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:307) ~[spring-beans-6.2.2.jar:6.2.2]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.2.jar:6.2.2]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) ~[spring-beans-6.2.2.jar:6.2.2]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.2.jar:6.2.2]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.2.jar:6.2.2]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.2.jar:3.4.2]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.2.jar:3.4.2]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.2.jar:3.4.2]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.2.jar:3.4.2]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.2.jar:3.4.2]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.2.jar:3.4.2]
-	at com.carRentApi.carRentApi.CarRentApiApplication.main(CarRentApiApplication.java:10) ~[classes/:na]
-Caused by: org.hibernate.AnnotationException: Entity 'com.carRentApi.carRentApi.entity.exception.ClientOauth' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
-	at org.hibernate.boot.model.internal.InheritanceState.determineDefaultAccessType(InheritanceState.java:289) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
-	at org.hibernate.boot.model.internal.InheritanceState.getElementsToProcess(InheritanceState.java:226) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
-	at org.hibernate.boot.model.internal.InheritanceState.postProcess(InheritanceState.java:162) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
-	at org.hibernate.boot.model.internal.EntityBinder.handleIdentifier(EntityBinder.java:410) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
-	at org.hibernate.boot.model.internal.EntityBinder.bindEntityClass(EntityBinder.java:251) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
-	at org.hibernate.boot.model.internal.AnnotationBinder.bindClass(AnnotationBinder.java:401) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
-	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:257) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
-	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:281) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
-	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:324) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
-	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.2.jar:6.2.2]
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.2.jar:6.2.2]
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.2.jar:6.2.2]
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.2.jar:6.2.2]
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.2.jar:6.2.2]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859) ~[spring-beans-6.2.2.jar:6.2.2]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808) ~[spring-beans-6.2.2.jar:6.2.2]
-	... 15 common frames omitted
-
-2025-03-06T19:08:12.185-03:00  INFO 42574 --- [carRentApi] [main] c.c.carRentApi.CarRentApiApplication     : Starting CarRentApiApplication using Java 21.0.6 with PID 42574 (/home/drepz/Desktop/rentSystem/target/classes started by drepz in /home/drepz/Desktop/rentSystem)
-2025-03-06T19:08:12.186-03:00  INFO 42574 --- [carRentApi] [main] c.c.carRentApi.CarRentApiApplication     : No active profile set, falling back to 1 default profile: "default"
-2025-03-06T19:08:12.574-03:00  INFO 42574 --- [carRentApi] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-03-06T19:08:12.604-03:00  INFO 42574 --- [carRentApi] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 4 JPA repository interfaces.
-2025-03-06T19:08:12.858-03:00  INFO 42574 --- [carRentApi] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-03-06T19:08:12.865-03:00  INFO 42574 --- [carRentApi] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-03-06T19:08:12.865-03:00  INFO 42574 --- [carRentApi] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
-2025-03-06T19:08:12.890-03:00  INFO 42574 --- [carRentApi] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-03-06T19:08:12.890-03:00  INFO 42574 --- [carRentApi] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 684 ms
-2025-03-06T19:08:13.024-03:00  INFO 42574 --- [carRentApi] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-03-06T19:08:13.180-03:00  INFO 42574 --- [carRentApi] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7e27f603
-2025-03-06T19:08:13.181-03:00  INFO 42574 --- [carRentApi] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-03-06T19:08:13.194-03:00  INFO 42574 --- [carRentApi] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5432/rent_system (PostgreSQL 17.4)
-2025-03-06T19:08:13.217-03:00  INFO 42574 --- [carRentApi] [main] o.f.core.internal.command.DbValidate     : Successfully validated 4 migrations (execution time 00:00.012s)
-2025-03-06T19:08:13.251-03:00  INFO 42574 --- [carRentApi] [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 4
-2025-03-06T19:08:13.253-03:00  INFO 42574 --- [carRentApi] [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
-2025-03-06T19:08:13.296-03:00  INFO 42574 --- [carRentApi] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-03-06T19:08:13.316-03:00  INFO 42574 --- [carRentApi] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
-2025-03-06T19:08:13.329-03:00  INFO 42574 --- [carRentApi] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-03-06T19:08:13.445-03:00  INFO 42574 --- [carRentApi] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-03-06T19:08:13.483-03:00  INFO 42574 --- [carRentApi] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 17.4
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-03-06T19:08:13.959-03:00  INFO 42574 --- [carRentApi] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-03-06T19:08:13.961-03:00  INFO 42574 --- [carRentApi] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-03-06T19:08:14.116-03:00  INFO 42574 --- [carRentApi] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-03-06T19:08:14.398-03:00  WARN 42574 --- [carRentApi] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-03-06T19:08:14.405-03:00  INFO 42574 --- [carRentApi] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name customAuthenticationProvider
-2025-03-06T19:08:14.550-03:00  WARN 42574 --- [carRentApi] [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Deferred [Mvc [pattern='/v2/api-docs/**'], Ant [pattern='/v2/api-docs/**']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
-2025-03-06T19:08:14.550-03:00  WARN 42574 --- [carRentApi] [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Deferred [Mvc [pattern='/v3/api-docs/**'], Ant [pattern='/v3/api-docs/**']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
-2025-03-06T19:08:14.550-03:00  WARN 42574 --- [carRentApi] [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Deferred [Mvc [pattern='/swagger-resources/**'], Ant [pattern='/swagger-resources/**']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
-2025-03-06T19:08:14.550-03:00  WARN 42574 --- [carRentApi] [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Deferred [Mvc [pattern='/swagger-ui.html'], Ant [pattern='/swagger-ui.html']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
-2025-03-06T19:08:14.550-03:00  WARN 42574 --- [carRentApi] [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Deferred [Mvc [pattern='/swagger-ui/**'], Ant [pattern='/swagger-ui/**']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
-2025-03-06T19:08:14.550-03:00  WARN 42574 --- [carRentApi] [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Deferred [Mvc [pattern='/webjars/**'], Ant [pattern='/webjars/**']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
-2025-03-06T19:08:15.216-03:00  INFO 42574 --- [carRentApi] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-03-06T19:08:15.222-03:00  INFO 42574 --- [carRentApi] [main] c.c.carRentApi.CarRentApiApplication     : Started CarRentApiApplication in 3.278 seconds (process running for 3.437)
-2025-03-06T19:08:15.866-03:00  INFO 42574 --- [carRentApi] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-03-06T19:08:15.868-03:00  INFO 42574 --- [carRentApi] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-03-06T19:08:15.870-03:00  INFO 42574 --- [carRentApi] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-03-06T19:08:15.871-03:00  INFO 42574 --- [carRentApi] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-03-06T19:08:15.875-03:00  INFO 42574 --- [carRentApi] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-16T19:48:26.356-03:00  INFO 28858 --- [carRentApi] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-16T19:48:26.358-03:00  INFO 28858 --- [carRentApi] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-16T19:48:26.526-03:00  INFO 28858 --- [carRentApi] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-03-16T19:48:26.833-03:00  WARN 28858 --- [carRentApi] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-16T19:48:26.841-03:00  INFO 28858 --- [carRentApi] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name customAuthenticationProvider
+2025-03-16T19:48:26.994-03:00  WARN 28858 --- [carRentApi] [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Deferred [Mvc [pattern='/v2/api-docs/**'], Ant [pattern='/v2/api-docs/**']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-03-16T19:48:26.995-03:00  WARN 28858 --- [carRentApi] [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Deferred [Mvc [pattern='/v3/api-docs/**'], Ant [pattern='/v3/api-docs/**']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-03-16T19:48:26.995-03:00  WARN 28858 --- [carRentApi] [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Deferred [Mvc [pattern='/swagger-resources/**'], Ant [pattern='/swagger-resources/**']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-03-16T19:48:26.995-03:00  WARN 28858 --- [carRentApi] [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Deferred [Mvc [pattern='/swagger-ui.html'], Ant [pattern='/swagger-ui.html']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-03-16T19:48:26.995-03:00  WARN 28858 --- [carRentApi] [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Deferred [Mvc [pattern='/swagger-ui/**'], Ant [pattern='/swagger-ui/**']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-03-16T19:48:26.995-03:00  WARN 28858 --- [carRentApi] [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Deferred [Mvc [pattern='/webjars/**'], Ant [pattern='/webjars/**']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-03-16T19:48:27.543-03:00  INFO 28858 --- [carRentApi] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-16T19:48:27.548-03:00  INFO 28858 --- [carRentApi] [main] c.c.carRentApi.CarRentApiApplication     : Started CarRentApiApplication in 3.573 seconds (process running for 3.785)
+2025-03-16T20:56:03.165-03:00  INFO 28858 --- [carRentApi] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-16T20:56:03.170-03:00  INFO 28858 --- [carRentApi] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-16T20:56:03.174-03:00  INFO 28858 --- [carRentApi] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-16T20:56:03.175-03:00  INFO 28858 --- [carRentApi] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-16T20:56:03.180-03:00  INFO 28858 --- [carRentApi] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

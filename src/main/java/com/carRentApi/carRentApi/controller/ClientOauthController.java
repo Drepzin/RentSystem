@@ -4,6 +4,7 @@ import com.carRentApi.carRentApi.entity.ClientOauth;
 import com.carRentApi.carRentApi.entity.dto.ClientOauthRequest;
 import com.carRentApi.carRentApi.service.ClientOauthService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -19,6 +20,7 @@ public class ClientOauthController {
 
     @PostMapping
     public ResponseEntity<ClientOauth> addClientOauth(@RequestBody ClientOauthRequest clientOauthRequest){
-
+        ClientOauth clientOauth = clientOauthService.addClientOauth(clientOauthRequest);
+        return new ResponseEntity<>(clientOauth, HttpStatus.CREATED);
     }
 }
